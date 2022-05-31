@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Challenge 2 with extended content">
+    <title>Portfolio BLIN Kevin</title>
+</head>
+
+<body>
+    <header class="header">
+        <label class="logo" for="header-menu">MENU</label>
+        <input type="checkbox" id="header-menu">
+        <nav class="menu">
+            <ul>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets réalisés</a></li>
+                <li><a href="#etudes">Études</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-container">
+            <div class="hero">
+                <h1>MON PORTFOLIO</h1>
+                <img src="https://gtgraphics.de/system/images/public/img-0325-panorama-ZMdI9rnd.jpg?1651951184"
+                    alt="Image panorama">
+                <div id="apropos">
+                </div>
+            </div>
+        </div>
+        <section id="projets">
+            <h2>Projets Réalisés</h2>
+
+            <div class='photo-grid'>
+                <div class="img-container grey">
+                    <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
+                        class="img-fluid" alt="Image working" title="Au travail!">
+                </div>
+                <div class="img-container" id="etudes">
+                    <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
+                        class="img-fluid" alt="Image fatigue" title="JPP">
+                </div>
+            </div>
+
+        </section>
+        <section id="contact">
+            <div class="container-bg">
+                <div class="contact-container">
+                    <form action="contact.php">
+                        <div>
+                            <h2>Me contacter</h2>
+                        </div>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="lname">Nom</label>
+                            </div>
+                            <div class="form-part2">
+                                <input type="text" id="lname" name="nom">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="fname">Prénom</label>
+                            </div>
+                            <div class="form-part2">
+                                <input type="text" id="fname" name="prénom">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="choix">Choix</label>
+                            </div>
+                            <div class="form-part2">
+                                <select id="choix" name="choix">
+                                    <option value="choix1">Choix 1</option>
+                                    <option value="choix2">Choix 2</option>
+                                    <option value="choix3">Choix 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="form-part2">
+                                <textarea id="message" name="message" placeholder="Quelque chose à rajouter? ..."
+                                    style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4 class="footer">Monportfolio.com</h4>
+    </footer>
+</body>
+
+</html>
