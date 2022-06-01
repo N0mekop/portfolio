@@ -253,22 +253,26 @@ li {
         right: 0;
         background: #0e0d15;
         transition: all 0.5s ease-in-out;
-        z-index: 10; 
+        z-index: 10;
     }
+
     .show-nav .navbar-links {
-        width: 100%;
+        width: 50vh;
     }
+
     .navbar-link>a {
         display: block;
         padding: 1rem;
         font-size: 2rem;
     }
+
     .navbar-link>a:hover {
         color: white;
         text-shadow: 0px 0px 3px white;
         transition: all 0.2s ease-in;
         text-transform: uppercase;
     }
+
     .burger {
         display: block;
         position: relative;
@@ -279,6 +283,7 @@ li {
         background: transparent;
         cursor: pointer;
     }
+
     .bar {
         display: block;
         width: 30px;
@@ -287,12 +292,14 @@ li {
         border-radius: 3px;
         transition: all 0.5s ease-in-out;
     }
+
     .show-nav .bar {
         width: 0;
         background: transparent;
     }
 
-    .bar::before, .bar::after {
+    .bar::before,
+    .bar::after {
         content: '';
         position: absolute;
         left: 0;
@@ -302,29 +309,34 @@ li {
         border-radius: 3px;
         transition: all 0.5s ease-in-out;
     }
+
     .bar::before {
-        transform:translateY(-10px);
+        transform: translateY(-10px);
     }
+
     .show-nav .bar::before {
-    transform: rotate(45deg)
+        transform: rotate(45deg)
     }
+
     .bar::after {
-        transform:translateY(10px);
+        transform: translateY(10px);
     }
+
     .show-nav .bar::after {
         transform: rotate(-45deg);
     }
 }
 
 @media screen and (min-width:768px) {
+
     #logo:hover,
     .navbar-link>a:hover,
     .navbar-link>a:active {
-            color: white;
-            text-shadow: 0px 0px 3px white;
-            transition: all 0.2s ease-in;
-            cursor: pointer;
-            text-transform: uppercase;
+        color: white;
+        text-shadow: 0px 0px 3px white;
+        transition: all 0.2s ease-in;
+        cursor: pointer;
+        text-transform: uppercase;
     }
 }
 
