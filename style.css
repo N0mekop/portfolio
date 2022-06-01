@@ -267,9 +267,7 @@ li {
     display: none;
 }
 
-.projets-text:hover {
-
-}
+.projets-text:hover {}
 
 /* Bg */
 
@@ -304,13 +302,13 @@ h2 {
 
 /* Img border, size */
 
-.logo {
+#logo {
     color: #caaac2;
     font-weight: 700;
 }
 
 @media only screen and (max-width: 900px) {
-    .logo {
+    #logo {
         color: #caaac2;
     }
 }
