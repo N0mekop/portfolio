@@ -205,10 +205,12 @@ table {
         background: #0e0d15;
         transition: all 0.5s ease-in-out;
         z-index: 10;
+        display: none;
     }
 
     .show-nav .navbarlinks {
         width: 100%;
+        display: block;
     }
 
     .navbarlink>a {
