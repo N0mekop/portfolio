@@ -2,7 +2,9 @@
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link href="style.css" rel="stylesheet">
+    <!--<link href="dist/css/theme.min.css" rel="stylesheet">-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
     </style>
@@ -15,26 +17,27 @@
 
 <body>
     <header class="header">
-        <label class="logo" for="header-menu">MENU</label>
-        <input type="checkbox" id="header-menu">
-        <nav class="menu">
-            <ul>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#projets">Projets réalisés</a></li>
-                <li><a href="#etudes">Études</a></li>
-                <li><a href="#articles">Articles</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class="navbar">
+            <div class="navbar-logo" id="logo">Logo</div>
+            <ul class="navbarlinks">
+                <li class="navbarlink"><a href="#apropos">À propos</a></li>
+                <li class="navbarlink"><a href="#projets">Projets réalisés</a></li>
+                <li class="navbarlink"><a href="#etudes">Études</a></li>
+                <li class="navbarlink"><a href="#articles">Articles</a></li>
+                <li class="navbarlink"><a href="#contact">Contact</a></li>
             </ul>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
     <main>
         <div class="hero-container">
             <div class="hero">
-                <h1>MON PORTFOLIO</h1>
-                <img src="https://gtgraphics.de/system/images/public/img-0325-panorama-ZMdI9rnd.jpg?1651951184"
-                    alt="Image panorama">
                 <div id="apropos">
                 </div>
+                <h1>MON PORTFOLIO</h1>
+                <img src="img/space-bg.jpg" alt="Image panorama">
             </div>
         </div>
         <section id="projets">
@@ -42,14 +45,36 @@
 
             <div class='photo-grid'>
                 <div class="img-container grey">
-                    <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
-                        class="img-fluid" alt="Image working" title="Au travail!">
+                    <img src="img/code.jpg" class="img-fluid" alt="Dev code" title="Au travail!">
+                </div>
+                <div class="img-container projets-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget leo pretium, pretium eros
+                        et, feugiat turpis. Curabitur in rhoncus mauris. Morbi at tortor elementum tortor imperdiet
+                        ultrices quis cursus metus. Vestibulum non fringilla magna. Sed in libero vel tellus laoreet
+                        cursus sit amet non mauris. Pellentesque tincidunt, tellus sed interdum consectetur, enim dui
+                        tincidunt ligula, ac ultrices tortor massa id tortor. Suspendisse posuere accumsan dolor in
+                        volutpat. Ut a ultricies sem. Praesent ultricies luctus varius. Praesent pretium pulvinar turpis
+                        auctor fermentum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget leo pretium, pretium eros
+                        et, feugiat turpis. Curabitur in rhoncus mauris. Morbi at tortor elementum tortor imperdiet
+                        ultrices quis cursus metus. Vestibulum non fringilla magna. Sed in libero vel tellus laoreet
+                        cursus sit amet non mauris. Pellentesque tincidunt, tellus sed interdum consectetur, enim dui
+                        tincidunt ligula, ac ultrices tortor massa id tortor. Suspendisse posuere accumsan dolor in
+                        volutpat. Ut a ultricies sem. Praesent ultricies luctus varius. Praesent pretium pulvinar turpis
+                        auctor fermentum.</p>
                 </div>
                 <div class="img-container" id="etudes">
-                    <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                        class="img-fluid" alt="Image fatigue" title="JPP">
+                    <img src="img/business.jpg" class="img-fluid" alt="Image work" title="">
                 </div>
-            </div>
+                <div class="img-container projets-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget leo pretium, pretium eros
+                        et, feugiat turpis. Curabitur in rhoncus mauris. Morbi at tortor elementum tortor imperdiet
+                        ultrices quis cursus metus. Vestibulum non fringilla magna. Sed in libero vel tellus laoreet
+                        cursus sit amet non mauris. Pellentesque tincidunt, tellus sed interdum consectetur, enim dui
+                        tincidunt ligula, ac ultrices tortor massa id tortor. Suspendisse posuere accumsan dolor in
+                        volutpat. Ut a ultricies sem. Praesent ultricies luctus varius. Praesent pretium pulvinar turpis
+                        auctor fermentum.</p>
+                </div>
 
         </section>
         <section id="contact">
@@ -77,13 +102,12 @@
                         </div>
                         <div class="row">
                             <div class="form-part1">
-                                <label for="choix">Choix</label>
+                                <label for="choix">Pourquoi?</label>
                             </div>
                             <div class="form-part2">
                                 <select id="choix" name="choix">
-                                    <option value="choix1">Choix 1</option>
-                                    <option value="choix2">Choix 2</option>
-                                    <option value="choix3">Choix 3</option>
+                                    <option value="choix1">Particulier (Une question?)</option>
+                                    <option value="choix2">Entreprise (Mon profil vous intéresse?)</option>
                                 </select>
                             </div>
                         </div>
@@ -92,7 +116,7 @@
                                 <label for="message">Message</label>
                             </div>
                             <div class="form-part2">
-                                <textarea id="message" name="message" placeholder="Quelque chose à rajouter? ..."
+                                <textarea id="message" name="message" placeholder="A vous de jouer! ..."
                                     style="height:200px"></textarea>
                             </div>
                         </div>
@@ -106,8 +130,9 @@
         </section>
     </main>
     <footer>
-        <h4 class="footer">Monportfolio.com</h4>
+        <h4 class="footer">monportfolio.com</h4>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
