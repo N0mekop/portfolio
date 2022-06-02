@@ -158,60 +158,6 @@ table {
 
 /* Navbar */
 
-/* Liens header brillants au survol */
-
-/* a:hover,
-#logo:hover,
-#logo:active {
-    color: white;
-    text-shadow: 0px 0px 3px white;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
- #logo:hover {
-    cursor: pointer;
-}
-
-.header {
-    color: white;
-    margin: 1em 0 1em 1em;
-}
-
-.menu {
-    margin: 1em 0 0 0;
-}
-
-.menu a {
-    padding: 0 0 1em 0;
-    font-weight: 700;
-}
-
-li {
-    margin: 0.5em 0 0 0;
-    cursor: pointer;
-} 
-
-#header-menu {
-    display: none;
-}
-
-#header-menu+nav {
-    display: none;
-}
-
-#header-menu:checked+nav {
-    display: block;
-}
-
-@media only screen and (max-width: 900px) {
-    label {
-        cursor: pointer;
-    }
-} */
-
 .navbar {
     display: flex;
     align-items: center;
@@ -221,15 +167,15 @@ li {
     height: 50px;
 }
 
-.navbar-links {
+.navbarlinks {
     display: flex;
 }
 
-.navbar-link {
+.navbarlink {
     padding: 0 1em 0 1em;
 }
 
-.navbar-link>a {
+.navbarlink>a {
     color: #bcb8ce;
     text-decoration: none;
 }
@@ -243,7 +189,7 @@ li {
 }
 
 @media screen and (max-width:768px) {
-    .navbar-links {
+    .navbarlinks {
         display: flex;
         flex-direction: column;
         width: 0;
@@ -256,21 +202,20 @@ li {
         z-index: 10;
     }
 
-    .show-nav .navbar-links {
-        width: 50vh;
+    .show-nav .navbarlinks {
+        width: 100%;
     }
 
-    .navbar-link>a {
+    .navbarlink>a {
         display: block;
         padding: 1rem;
         font-size: 2rem;
     }
 
-    .navbar-link>a:hover {
+    .navbarlink>a:hover {
         color: white;
         text-shadow: 0px 0px 3px white;
         transition: all 0.2s ease-in;
-        text-transform: uppercase;
     }
 
     .burger {
@@ -330,8 +275,8 @@ li {
 @media screen and (min-width:768px) {
 
     #logo:hover,
-    .navbar-link>a:hover,
-    .navbar-link>a:active {
+    .navbarlink>a:hover,
+    .navbarlink>a:active {
         color: white;
         text-shadow: 0px 0px 3px white;
         transition: all 0.2s ease-in;
@@ -415,25 +360,7 @@ h2 {
     }
 }
 
-/* .img-fluid {
-    max-width: 100%;
-    height: auto;
-} */
-
-/* PROPRIETE IMAGES FLEX BOX A CONTINUER ------------------------------------------ */
-
 /* Img border, size */
-
-/* #logo {
-    color: #caaac2;
-    font-weight: 700;
-}
-
-@media only screen and (max-width: 900px) {
-    #logo {
-        color: #caaac2;
-    }
-} */
 
 #apropos img {
     display: block;
