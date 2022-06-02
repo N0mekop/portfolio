@@ -487,6 +487,10 @@ input[type=submit]:hover {
     }
 }
 
+sup {
+    color: #D80907;
+}
+
 /* Footer */
 
 .footer {
